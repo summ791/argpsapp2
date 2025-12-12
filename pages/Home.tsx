@@ -37,9 +37,9 @@ export const Home: React.FC = () => {
                 <div className="absolute inset-0 bg-primary-200 rounded-full opacity-20 animate-pulse"></div>
                 <div className="absolute inset-4 border-[6px] border-white rounded-full overflow-hidden shadow-2xl z-10">
                    <img 
-                    src="/rithanya-profile.jpg" 
+                    src="https://raw.githubusercontent.com/summ791/argpsapp2/main/rithanya-profile.jpg" 
                     alt="Rithanya Gopinathan" 
-                    className="w-full h-full object-cover object-top transform hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover object-center transform hover:scale-110 transition-transform duration-700"
                   />
                 </div>
                 
