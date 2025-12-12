@@ -26,20 +26,14 @@ export const Header: React.FC = () => {
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
-          {/* Logo - Replaced with Image */}
-          <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => navigate('/')}>
+          {/* Logo & Brand Name */}
+          <div className="flex-shrink-0 flex items-center gap-4 cursor-pointer" onClick={() => navigate('/')}>
              <img 
                src="/logo.jpg" 
-               alt="ARGPS Nutritious Lifestyle" 
-               className="h-20 w-auto object-contain"
-               onError={(e) => {
-                 // Fallback if image is missing
-                 e.currentTarget.style.display = 'none';
-                 e.currentTarget.nextElementSibling?.classList.remove('hidden');
-               }}
+               alt="ARGPS Logo" 
+               className="h-16 w-auto object-contain"
              />
-             {/* Fallback Text if image fails to load */}
-             <div className="hidden flex flex-col justify-center">
+             <div className="flex flex-col justify-center">
                 <span className="font-serif text-2xl font-bold text-gray-900 leading-none">ARGPS</span>
                 <span className="text-xs uppercase tracking-[0.15em] text-primary-600 font-semibold mt-1">Nutritious Lifestyle</span>
              </div>
