@@ -48,7 +48,7 @@ export const Footer: React.FC = () => {
                  <div className="p-2 bg-primary-800 rounded-full group-hover:bg-primary-700 transition-colors">
                     <MapPin size={16} className="flex-shrink-0" />
                  </div>
-                <span className="mt-1.5 opacity-90">Chennai, India</span>
+                <span className="mt-1.5 opacity-90">Chennai, Tamil Nadu, India</span>
               </li>
             </ul>
           </div>
