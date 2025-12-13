@@ -18,7 +18,7 @@ export const About: React.FC = () => {
          <div className="bg-[#F0FDFA] rounded-2xl p-6 md:p-10 lg:p-16 text-center shadow-sm border border-primary-50">
             <h2 className="font-serif text-xl md:text-2xl font-bold text-primary-900 mb-4 md:mb-6">Our Mission</h2>
             <p className="text-gray-700 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
-              At ARGPS Nutritious Lifestyle, we are dedicated to helping you achieve optimal health through personalized nutrition guidance and practical wellness strategies.
+              At ARGPS Nutritious Lifestyle, we are dedicated to help you achieve optimal health through personalized nutrition guidance and practical wellness strategies.
             </p>
             <p className="text-gray-700 text-base md:text-lg leading-relaxed max-w-3xl mx-auto mt-4 md:mt-6">
               Our approach combines scientific research with traditional wisdom to create sustainable, balanced eating habits that nourish both body and mind.
