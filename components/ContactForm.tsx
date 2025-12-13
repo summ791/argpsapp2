@@ -22,10 +22,8 @@ export const ContactForm: React.FC = () => {
     }
 
     // Phone validation (Strictly 10 digits)
-    // Remove non-digit characters to check length
     const digitsOnly = phone.replace(/\D/g, '');
     
-    // Check if it is exactly 10 digits
     if (digitsOnly.length !== 10) {
       newErrors.phone = 'Phone number must be exactly 10 digits.';
     }
@@ -68,22 +66,22 @@ export const ContactForm: React.FC = () => {
     <>
       <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden flex flex-col md:flex-row">
         {/* Left Info Panel - Green */}
-        <div className="bg-[#0d9488] p-10 md:p-12 md:w-5/12 text-white flex flex-col justify-between">
+        <div className="bg-[#0d9488] p-8 md:p-12 md:w-5/12 text-white flex flex-col justify-between">
           
           <div>
-            <h3 className="font-serif text-2xl font-bold mb-10">Contact Information</h3>
+            <h3 className="font-serif text-2xl font-bold mb-8 md:mb-10">Contact Information</h3>
             
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
               <div className="flex items-start gap-4">
-                 <Mail className="text-white opacity-80 mt-1" size={20} />
-                 <div>
+                 <Mail className="text-white opacity-80 mt-1 flex-shrink-0" size={20} />
+                 <div className="overflow-hidden">
                    <p className="font-bold text-white text-sm mb-1">Email</p>
-                   <p className="text-sm text-white/90">argpsnutritiouslifestyle25@gmail.com</p>
+                   <p className="text-sm text-white/90 break-all">argpsnutritiouslifestyle25@gmail.com</p>
                  </div>
               </div>
 
               <div className="flex items-start gap-4">
-                 <Phone className="text-white opacity-80 mt-1" size={20} />
+                 <Phone className="text-white opacity-80 mt-1 flex-shrink-0" size={20} />
                  <div>
                    <p className="font-bold text-white text-sm mb-1">Phone</p>
                    <p className="text-sm text-white/90">+91 8056510590</p>
@@ -91,7 +89,7 @@ export const ContactForm: React.FC = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                 <MapPin className="text-white opacity-80 mt-1" size={20} />
+                 <MapPin className="text-white opacity-80 mt-1 flex-shrink-0" size={20} />
                  <div>
                    <p className="font-bold text-white text-sm mb-1">Location</p>
                    <p className="text-sm text-white/90">Chennai, Tamil Nadu, India</p>
@@ -101,13 +99,14 @@ export const ContactForm: React.FC = () => {
           </div>
 
           <div className="mt-12">
-            <h4 className="font-bold text-white mb-4 text-sm">Follow Us</h4>
+            <h4 className="font-bold text-white mb-4 text-sm">Follow Me on</h4>
             <div className="flex gap-4">
               <a 
                 href="https://www.instagram.com/argps_nutritious_lifestyle?igsh=MWN6bzM1aXppNTFuNw==" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 border border-white/30 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors"
+                aria-label="Instagram"
               >
                   <Instagram size={20} />
               </a>
@@ -116,6 +115,7 @@ export const ContactForm: React.FC = () => {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 border border-white/30 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors"
+                aria-label="Facebook"
               >
                   <Facebook size={20} />
               </a>
@@ -124,7 +124,7 @@ export const ContactForm: React.FC = () => {
         </div>
 
         {/* Right Form Panel - White */}
-        <div className="p-10 md:p-12 md:w-7/12 bg-white">
+        <div className="p-8 md:p-12 md:w-7/12 bg-white">
           <form ref={form} onSubmit={sendEmail} className="space-y-6">
             <div>
                 <label htmlFor="name" className="block text-sm font-bold text-gray-700 mb-2">Name</label>
@@ -133,7 +133,7 @@ export const ContactForm: React.FC = () => {
                 id="name"
                 name="user_name"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-all bg-white"
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-all bg-white text-base"
                 placeholder="Your name"
                 />
             </div>
@@ -145,7 +145,7 @@ export const ContactForm: React.FC = () => {
                 id="email"
                 name="user_email"
                 required
-                className={`w-full px-4 py-3 rounded-lg border ${errors.email ? 'border-red-500 ring-1 ring-red-500' : 'border-gray-200'} focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-all bg-white`}
+                className={`w-full px-4 py-3 rounded-lg border ${errors.email ? 'border-red-500 ring-1 ring-red-500' : 'border-gray-200'} focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-all bg-white text-base`}
                 placeholder="your.email@example.com"
               />
               {errors.email && <p className="text-red-500 text-xs mt-1 font-medium">{errors.email}</p>}
@@ -158,7 +158,7 @@ export const ContactForm: React.FC = () => {
                 id="phone"
                 name="user_phone"
                 required
-                className={`w-full px-4 py-3 rounded-lg border ${errors.phone ? 'border-red-500 ring-1 ring-red-500' : 'border-gray-200'} focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-all bg-white`}
+                className={`w-full px-4 py-3 rounded-lg border ${errors.phone ? 'border-red-500 ring-1 ring-red-500' : 'border-gray-200'} focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-all bg-white text-base`}
                 placeholder="9876543210"
                 />
                 {errors.phone && <p className="text-red-500 text-xs mt-1 font-medium">{errors.phone}</p>}
@@ -171,7 +171,7 @@ export const ContactForm: React.FC = () => {
                 name="message"
                 required
                 rows={4}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-all bg-white resize-none"
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-500 focus:ring-1 focus:ring-primary-500 outline-none transition-all bg-white resize-none text-base"
                 placeholder="Your message"
               ></textarea>
             </div>
