@@ -171,7 +171,7 @@ export const Home: React.FC = () => {
            <div className="bg-primary-50 border border-primary-100 rounded-xl p-6 md:p-8 text-center shadow-sm max-w-4xl mx-auto">
               <h3 className="font-serif text-lg md:text-xl font-bold text-primary-900 mb-2">Important Note</h3>
               <p className="text-gray-700 text-sm md:text-base">
-                These outcomes are not typical; individual outcomes may vary from person to person
+                The outcomes are not typical; Individual outcomes may vary from person to person
               </p>
            </div>
         </div>
