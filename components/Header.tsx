@@ -25,23 +25,23 @@ export const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24">
+        <div className="flex justify-between items-center h-20 md:h-24">
           {/* Logo & Brand Name */}
-          <div className="flex-shrink-0 flex items-center gap-4 cursor-pointer" onClick={() => navigate('/')}>
+          <div className="flex-shrink-0 flex items-center gap-3 md:gap-4 cursor-pointer" onClick={() => navigate('/')}>
              <img 
                src="https://raw.githubusercontent.com/summ791/argpsapp2/main/logo.jpg" 
                alt="ARGPS Logo" 
-               className="h-16 w-auto object-contain"
+               className="h-12 md:h-16 w-auto object-contain"
              />
              <div className="flex flex-col justify-center">
-                <span className="font-serif text-2xl font-bold text-gray-900 leading-none">ARGPS</span>
-                <span className="text-xs uppercase tracking-[0.15em] text-primary-600 font-semibold mt-1">Nutritious Lifestyle</span>
+                <span className="font-serif text-xl md:text-2xl font-bold text-gray-900 leading-none">ARGPS</span>
+                <span className="text-[10px] md:text-xs uppercase tracking-[0.15em] text-primary-600 font-semibold mt-1">Nutritious Lifestyle</span>
              </div>
           </div>
 
           {/* Desktop Nav - Classic Horizontal Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <nav className="flex space-x-10">
+            <nav className="flex space-x-8 lg:space-x-10">
               {navLinks.map((link) => (
                 <RouterNavLink
                   key={link.name}
@@ -56,10 +56,10 @@ export const Header: React.FC = () => {
                 </RouterNavLink>
               ))}
             </nav>
-            <div className="pl-8 border-l border-gray-200">
+            <div className="pl-6 lg:pl-8 border-l border-gray-200">
                 <button 
                   onClick={() => navigate('/contact')}
-                  className="bg-primary-700 text-white px-6 py-2.5 rounded-lg font-medium hover:bg-primary-800 transition-colors shadow-sm text-sm tracking-wide transform hover:-translate-y-0.5 duration-200"
+                  className="bg-primary-700 text-white px-5 lg:px-6 py-2.5 rounded-lg font-medium hover:bg-primary-800 transition-colors shadow-sm text-sm tracking-wide transform hover:-translate-y-0.5 duration-200 whitespace-nowrap"
                 >
                   Book Consultation
                 </button>
@@ -70,7 +70,8 @@ export const Header: React.FC = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className="text-gray-500 hover:text-primary-600 focus:outline-none p-2"
+              className="text-gray-500 hover:text-primary-600 focus:outline-none p-2 rounded-md hover:bg-gray-50 transition-colors"
+              aria-label={isOpen ? "Close menu" : "Open menu"}
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -80,7 +81,7 @@ export const Header: React.FC = () => {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden bg-white border-b border-gray-100 absolute w-full shadow-lg z-50">
+        <div className="md:hidden bg-white border-b border-gray-100 absolute w-full shadow-lg z-50 animate-in slide-in-from-top-2 duration-200">
           <div className="px-4 pt-4 pb-6 space-y-2">
             {navLinks.map((link) => (
               <RouterNavLink
@@ -102,7 +103,7 @@ export const Header: React.FC = () => {
                     navigate('/contact');
                     setIsOpen(false);
                 }}
-                className="w-full bg-primary-700 text-white px-4 py-3 rounded-md font-medium hover:bg-primary-800 transition-colors"
+                className="w-full bg-primary-700 text-white px-4 py-3.5 rounded-md font-medium hover:bg-primary-800 transition-colors shadow-sm text-center"
                 >
                 Book Consultation
                 </button>
