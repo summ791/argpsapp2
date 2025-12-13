@@ -50,7 +50,7 @@ export const Home: React.FC = () => {
                    </div>
                    <div>
                       <p className="font-bold text-gray-900 text-xs md:text-sm">Rithanya Gopinathan</p>
-                      <p className="text-[10px] md:text-xs text-primary-600 font-medium">Wellness Consultant</p>
+                      <p className="text-xs text-primary-600 font-medium">Wellness Consultant</p>
                    </div>
                 </div>
               </div>
@@ -117,9 +117,9 @@ export const Home: React.FC = () => {
                 <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-6">About Me</h2>
                 
                 <p className="text-gray-600 leading-relaxed mb-4 md:mb-6 text-base md:text-lg">
-                  I'm Rithanya Gopinathan, a Wellness Consultant dedicated to helping you achieve a healthier, more balanced lifestyle through personalized nutrition.
+                  I'm Rithanya Gopinathan, a Wellness Consultant dedicated to help you achieve a healthier, more balanced lifestyle through personalized nutrition.
                 </p>
-                <p className="text-gray-600 leading-relaxed mb-6 md:mb-8 text-sm md:text-base">
+                <p className="text-gray-600 leading-relaxed mb-6 md:mb-8 text-base md:text-lg">
                   With a holistic approach to wellness, we'll work together to create a nutrition plan that fits your unique needs, preferences, and goals—all delivered conveniently online.
                 </p>
 
