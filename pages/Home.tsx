@@ -109,7 +109,7 @@ export const Home: React.FC = () => {
       {/* About Me & Philosophy Section - Restored to split layout */}
       <section className="py-20 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
+           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start mb-16">
              
              {/* Left Column: About Me Text */}
              <div className="lg:w-1/2">
@@ -165,7 +165,14 @@ export const Home: React.FC = () => {
                    </div>
                 </div>
              </div>
+           </div>
 
+           {/* Important Note Card */}
+           <div className="bg-primary-50 border border-primary-100 rounded-xl p-8 text-center shadow-sm max-w-4xl mx-auto">
+              <h3 className="font-serif text-xl font-bold text-primary-900 mb-2">Important Note</h3>
+              <p className="text-gray-700">
+                These outcomes are not typical; individual outcomes may vary from person to person
+              </p>
            </div>
         </div>
       </section>
