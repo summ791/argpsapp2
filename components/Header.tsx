@@ -61,7 +61,7 @@ export const Header: React.FC = () => {
                   onClick={() => navigate('/contact')}
                   className="bg-primary-700 text-white px-4 lg:px-6 py-2 md:py-2.5 rounded-lg font-medium hover:bg-primary-800 transition-colors shadow-sm text-xs md:text-sm tracking-wide transform hover:-translate-y-0.5 duration-200 whitespace-nowrap"
                 >
-                  Book Consultation
+                  Get Started
                 </button>
             </div>
           </div>
@@ -105,7 +105,7 @@ export const Header: React.FC = () => {
                 }}
                 className="w-full bg-primary-700 text-white px-4 py-3.5 rounded-md font-medium hover:bg-primary-800 transition-colors shadow-sm text-center"
                 >
-                Book Consultation
+                Get Started
                 </button>
             </div>
           </div>
