@@ -198,7 +198,7 @@ export const Home: React.FC = () => {
 
            {/* Subtext */}
            <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto mb-10 md:mb-12 leading-relaxed">
-             Have questions or ready to book a consultation? Reach out and we'll get back to you as soon as possible.
+             Have questions or ready to book a consultation? Reach out and we'll get back to you as soon as possible
            </p>
 
            {/* Button */}
