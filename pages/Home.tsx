@@ -190,7 +190,7 @@ export const Home: React.FC = () => {
              <span className="bg-primary-50 text-primary-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-3 md:mb-4 inline-block">Get In Touch</span>
              <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-6">Contact Us</h2>
              <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
-               Have questions or ready to start your wellness journey? Reach out and we'll get back to you as soon as possible.
+               Have questions or ready to start your wellness journey? Reach out and we'll get back to you as soon as possible
              </p>
            </div>
            <ContactForm />
