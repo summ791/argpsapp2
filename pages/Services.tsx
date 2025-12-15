@@ -11,7 +11,7 @@ export const Services: React.FC = () => {
           Our Services
         </h1>
         <p className="text-gray-600 text-base md:text-lg">
-          Tailored nutrition programs designed to meet your unique health goals and lifestyle needs.
+          Tailored nutrition programs designed to meet your unique health goals and lifestyle needs
         </p>
         <div className="w-16 md:w-24 h-1.5 bg-primary-500 mx-auto rounded-full mt-8 md:mt-10"></div>
       </div>
