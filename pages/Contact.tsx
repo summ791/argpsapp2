@@ -11,7 +11,7 @@ export const Contact: React.FC = () => {
           Contact Us
         </h1>
         <p className="text-gray-600 text-lg">
-          Ready to start your wellness journey? Reach out and we'll get back to you as soon as possible.
+          Ready to start your wellness journey? Reach out and we'll get back to you as soon as possible
         </p>
         <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full mt-8"></div>
       </div>
