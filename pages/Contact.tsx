@@ -8,7 +8,7 @@ export const Contact: React.FC = () => {
       {/* Header */}
       <div className="pt-16 pb-12 text-center max-w-4xl mx-auto px-4">
         <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary-900 mb-6">
-          Contact Us
+          Get in Touch
         </h1>
         <p className="text-gray-600 text-lg">
           Ready to start your wellness journey? Reach out and we'll get back to you as soon as possible
