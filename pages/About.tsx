@@ -57,7 +57,7 @@ export const About: React.FC = () => {
 
             {/* Approach Card */}
             <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-10 shadow-lg hover:shadow-xl transition-shadow">
-               <h3 className="font-serif text-xl md:text-2xl font-bold text-primary-900 mb-4 md:mb-6">Our Approach</h3>
+               <h3 className="font-serif text-xl md:text-2xl font-bold text-primary-900 mb-4 md:mb-6">My Approach</h3>
                <div className="space-y-5 md:space-y-6">
                   <div className="flex gap-3 md:gap-4">
                      <div className="mt-1 w-6 h-6 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
