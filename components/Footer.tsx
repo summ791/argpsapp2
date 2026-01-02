@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
                 <Instagram size={20} />
               </a>
               <a 
-                href="https://www.facebook.com/share/17jSixwQ2w/" 
+                href="https://www.facebook.com/share/1NwZcFCtLQ/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 bg-primary-800 rounded-xl flex items-center justify-center text-primary-100 hover:bg-primary-700 hover:text-white transition-all duration-200 hover:-translate-y-1"
